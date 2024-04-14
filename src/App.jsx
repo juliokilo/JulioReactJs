@@ -1,10 +1,17 @@
-import Footer from './Footer.jsx'
-function App() {
 
-let name= 'julio'
-  return( 
-        <div><h1>pulseador supremo {name}</h1></div>
-  )
-}
-</Footer>
-export default App
+import {Layout} from "./Components/Layout/Layout"
+import Itemlistcontainer from "./Components/Pages/Itemlistcontainer/Itemlistcontainer";
+import "./App.css"
+
+
+const App = () => {
+  return (
+    <div className="fullbackground">
+      <Layout>
+        <Itemlistcontainer welcome={"bienvenidos"} />
+      </Layout>
+    </div>
+  );
+};
+
+export default App;
